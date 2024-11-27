@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlhwva3wqaite"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_jdvys"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"walk",
+"speed": 5.0
+}]
+
+[node name="Player" type="Area2D"]
+metadata/_edit_group_ = true
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_jdvys")
+animation = &"walk"
